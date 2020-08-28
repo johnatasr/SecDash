@@ -13,3 +13,7 @@ RUN pip install -U pip
 RUN pip install -Ur requirements.txt
 
 RUN python /code/manage.py collectstatic --noinput
+
+
+
+
