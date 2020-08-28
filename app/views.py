@@ -1,5 +1,6 @@
-from django.views.generic import TemplateView
+from django.shortcuts import render
 
 
-class IndexView(TemplateView):
-    template_name = "react/index.html"
+# Create your views here.
+def index(request):
+    return render(request, 'react/index.html', context=None)
