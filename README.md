@@ -25,7 +25,7 @@ pip install -r requirements.txt
 Via Docker:
 ```
 docker-compose build
-docker-compose run
+docker-compose up
 ```
 
 ## API Autenticação
