@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:10
+    stop_signal: SIGINT
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    restart: always
+  web:
+
+    image: "secdash"
+    build: .
+    stop_signal: SIGINT
+    stdin_open: true
+    tty: true
+    command: >
+      bash -c "while ! nc -w 1 -z db 5432;
+               do sleep 0.1;
+               done;
+               python manage.py migrate;
+               while :;
+               do exec python manage.py runserver_plus 0.0.0.0:8000;
+               done;
+               "
+    volumes:
+      - .:/code:cached
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      IN_DOCKER: 1
+  webserver:
+    image: jumanjiman/caddy
+    depends_on:
+      - web
+    ports:
+      - "80:8000"
+    command: -conf /code/misc/caddyfile.conf
+    volumes:
+      - .:/code:cached

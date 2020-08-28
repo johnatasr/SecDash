@@ -1,0 +1,1 @@
+web: gunicorn bethehero.wsgi:application --log-file -
