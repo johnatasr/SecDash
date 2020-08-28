@@ -1,19 +1,29 @@
 version: '3'
+
 services:
+
   db:
-    image: postgres:10.1-alpine
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: password
     volumes:
-      - postgres_data:/var/lib/postgresql/data/
+      - ./dbdata:/var/lib/postgresql/data
     ports:
       - '5432'
   web:
+    image: django
     build: .
-    command: python3 manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
-    ports:
-      - '8000:8000'
     depends_on:
       - db
-volumes:
-  postgres_data:
+    environment:
+      IN_DOCKER: 1
+
+  webserver:
+    image: jumanjiman/caddy
+    depends_on:
+      - web
+    ports:
+      - "80:8000"
+    command: -port 8000 -host 0.0.0.0 "proxy / web:8000 { }"
