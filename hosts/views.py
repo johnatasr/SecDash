@@ -115,6 +115,9 @@ class HostsViewSet(viewsets.ModelViewSet):
 
         get_vulnes = Vulnerability.objects.filter(title__istartswith=title, corrected=False).values('id')
 
+        if not get_vulnes.exists():
+            return Response([], status=HTTP_200_OK)
+
         if get_vulnes.exists():
             vulne_ids_list = []
             for vulne in get_vulnes:
