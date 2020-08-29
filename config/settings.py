@@ -22,12 +22,6 @@ root = environ.Path(__file__)
 env = environ.Env()
 environ.Env.read_env()
 
-sentry_sdk.init(
-    dsn=env.str('DNS_SENTRY'),
-    integrations=[DjangoIntegration()],
-    traces_sample_rate=1.0,
-    send_default_pii=True
-)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -129,15 +123,15 @@ elif 'test' in sys.argv:
     }
 
 else:
-    # DATABASES = {}
-    # DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
+    DATABASES = {}
+    DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
 
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
+    sentry_sdk.init(
+        dsn=env.str('DNS_SENTRY'),
+        integrations=[DjangoIntegration()],
+        traces_sample_rate=1.0,
+        send_default_pii=True
+    )
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
