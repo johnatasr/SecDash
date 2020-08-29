@@ -4,4 +4,4 @@ import os
 
 # Create your views here.
 def index(request):
-    return render(request, 'app/index.html', context=None)
+    return render(request, 'react/index.html', context=None)

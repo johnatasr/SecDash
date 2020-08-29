@@ -114,11 +114,15 @@ elif 'test' in sys.argv:
     }
 
 else:
-    DATABASES = {}
-    DATABASES['default'] = dj_database_url.parse('postgres://xiacmylxukozcc:9415cb0eb73969456db5f150fedd0471e320246d95f8b330d03cca7874e077cf@ec2-50-19-222-129.compute-1.amazonaws.com:5432/d21g2h6g9st18h', conn_max_age=600)
+    # DATABASES = {}
+    # DATABASES['default'] = dj_database_url.parse('postgres://xiacmylxukozcc:9415cb0eb73969456db5f150fedd0471e320246d95f8b330d03cca7874e077cf@ec2-50-19-222-129.compute-1.amazonaws.com:5432/d21g2h6g9st18h', conn_max_age=600)
 
-
-
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

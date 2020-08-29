@@ -49,7 +49,7 @@ def create_host(vulne, row):
         }
 
         host = Host.objects.create(**payload)
-        host.vulnerability.add(vulne)
+        host.vulnerabilities.add(vulne)
         host.save()
     except Exception as error:
         raise error
@@ -57,7 +57,7 @@ def create_host(vulne, row):
 
 def update_host(vulne, host):
     try:
-        host.vulnerability.add(vulne)
+        host.vulnerabilities.add(vulne)
         host.save()
 
     except Exception as error:

@@ -154,6 +154,9 @@ class HostsViewSet(viewsets.ModelViewSet):
             total_hosts = Host.objects.all()
             total_vulne = Vulnerability.objects.all()
 
+            if total_vulne.count() < 10:
+                return Response([], status=HTTP_200_OK)
+
             total_vulne_host = total_hosts.distinct('hostname')\
                 .filter(vulnerabilities__corrected=False).count()
 
@@ -182,6 +185,10 @@ class HostsViewSet(viewsets.ModelViewSet):
     @action(methods=['GET'], detail=False)
     def get_graphics(self, request):
         try:
+            total_vulnes = Vulnerability.objects.all().count()
+            if total_vulnes < 10:
+                return Response([], status=HTTP_200_OK)
+
             severity_low = Vulnerability.objects.filter(severity__istartswith='Baixo', corrected=False)\
                 .values('title', 'severity', 'cvss').distinct('title')
             severity_medium = Vulnerability.objects.filter(severity__istartswith='Médio', corrected=False)\
@@ -209,6 +216,10 @@ class HostsViewSet(viewsets.ModelViewSet):
     @action(methods=['GET'], detail=False)
     def get_top_ten(self, request):
         try:
+            total_vulnes = Vulnerability.objects.all().count()
+            if total_vulnes < 10:
+                return Response([], status=HTTP_200_OK)
+
             queryset = Host.objects.all().order_by('hostname')
             serializer = HostsSerializer(queryset, many=True).data
 
