@@ -13,6 +13,21 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os, sys
 from datetime import timedelta
 import dj_database_url
+import environ
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+
+root = environ.Path(__file__)
+env = environ.Env()
+environ.Env.read_env()
+
+sentry_sdk.init(
+    dsn=env.str('DNS_SENTRY'),
+    integrations=[DjangoIntegration()],
+    traces_sample_rate=1.0,
+    send_default_pii=True
+)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,10 +37,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'iw2g*lorxd(@dbvsw8rz_w9b)n)w-u5$l7^s6x&&y5eokga11#'
+SECRET_KEY = env.str('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DEBUG', default=False)
 
 ALLOWED_HOSTS = ['*']
 
@@ -115,7 +130,7 @@ elif 'test' in sys.argv:
 
 else:
     # DATABASES = {}
-    # DATABASES['default'] = dj_database_url.parse('postgres://xiacmylxukozcc:9415cb0eb73969456db5f150fedd0471e320246d95f8b330d03cca7874e077cf@ec2-50-19-222-129.compute-1.amazonaws.com:5432/d21g2h6g9st18h', conn_max_age=600)
+    # DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
 
     DATABASES = {
         'default': {
@@ -160,10 +175,9 @@ USE_L10N = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-# STATIC_ROOT = os.path.join(BASE_DIR, "_static")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, "staticfiles")]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 MEDIA_URL = '/media/'
 

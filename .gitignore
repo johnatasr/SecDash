@@ -44,15 +44,10 @@ node_modules/
 .sass-cache
 
 # virtual environments
-.env
+config/.env
 
 # User-uploaded media
 media/
 
 .idea
 .vscode
-
-
-/staticfiles/
-/static/compiled/
-/templates/react/
