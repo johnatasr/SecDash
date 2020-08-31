@@ -127,17 +127,6 @@ else:
     DATABASES = {}
     DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
 
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql_psycopg2",
-            "NAME": "postgres",
-            "USER": "postgres",
-            "PASSWORD": "postgres",
-            "HOST": "localhost",
-            "PORT": 5434,
-        }
-    }
-
     sentry_sdk.init(
         dsn=env.str('DNS_SENTRY'),
         integrations=[DjangoIntegration()],
