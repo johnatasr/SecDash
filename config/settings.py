@@ -127,8 +127,15 @@ elif 'test' in sys.argv:
     }
 
 else:
-    DATABASES = {}
-    DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
+    # DATABASES = {}
+    # DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
     sentry_sdk.init(
         dsn=env.str('DNS_SENTRY'),
@@ -174,7 +181,7 @@ USE_L10N = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "../static"),
 ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
