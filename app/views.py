@@ -1,12 +1,3 @@
-# from django.shortcuts import render
-#
-#
-# # Create your views here.
-# def index(request):
-#     return render(request, 'react/index.html', context=None)
-#
-
-
 import os
 import logging
 from django.http import HttpResponse
@@ -24,7 +15,7 @@ class FrontendAppView(View):
         except FileNotFoundError:
             logging.exception('Falha ao carregar template')
             return HttpResponse(
-                """
+                """"
                     Ops, Erro ao carregar página !
                 """,
                 status=501,
