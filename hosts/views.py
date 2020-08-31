@@ -25,6 +25,10 @@ class HostsViewSet(viewsets.ModelViewSet):
         try:
             page = request.query_params.get('page')
             queryset = Host.objects.filter(vulnerabilities__corrected=False).order_by('hostname').distinct()
+
+            if not queryset.exists():
+                return Response('Nenhum registro encontrado', status=HTTP_200_OK)
+
             serializer = HostsSerializer(queryset, many=True).data
 
             hosts = Paginator(serializer, 50)
@@ -41,8 +45,12 @@ class HostsViewSet(viewsets.ModelViewSet):
     @action(methods=['GET'], detail=False)
     def list_hosts_per_row(self, request):
         try:
-            queryset = Host.objects.filter(vulnerabilities__corrected=False).order_by('hostname').distinct()
-            serializer = HostsSerializer(queryset, many=True).data
+            queryset = Host.objects.filter(vulnerabilities__corrected=False)
+
+            if queryset.count() < 10:
+                return Response({"hostsList": [], "loaded": False}, status=HTTP_200_OK)
+
+            serializer = HostsSerializer(queryset.order_by('hostname').distinct(), many=True).data
 
             list_total = []
             for host in serializer:
@@ -60,7 +68,7 @@ class HostsViewSet(viewsets.ModelViewSet):
                     }
                     list_total.append(payload)
 
-            return Response({"hostsList": list_total}, status=HTTP_200_OK)
+            return Response({"hostsList": list_total, "loaded": True}, status=HTTP_200_OK)
         except Exception as error:
             return Response('Error ao carregar Hosts', status=HTTP_500_INTERNAL_SERVER_ERROR)
 
@@ -73,6 +81,9 @@ class HostsViewSet(viewsets.ModelViewSet):
                 vulnerabilities__corrected=False,
                 vulnerabilities__title__istartswith=title
             ).order_by('hostname')
+
+            if queryset.count() < 10:
+                return Response({"hostsList": [], "loaded": False}, status=HTTP_200_OK)
 
             vulne_ids = Host.objects.filter(
                 vulnerabilities__corrected=False,
@@ -104,7 +115,7 @@ class HostsViewSet(viewsets.ModelViewSet):
                         del vulne
                     aux = aux + 1
 
-            return Response({"hostsList": list_total}, status=HTTP_200_OK)
+            return Response({"hostsList": list_total, "loaded": True}, status=HTTP_200_OK)
         except Exception as error:
             return Response('Error ao carregar Hosts', status=HTTP_500_INTERNAL_SERVER_ERROR)
 
@@ -115,15 +126,12 @@ class HostsViewSet(viewsets.ModelViewSet):
 
         get_vulnes = Vulnerability.objects.filter(title__istartswith=title, corrected=False).values('id')
 
-        if not get_vulnes.exists():
-            return Response([], status=HTTP_200_OK)
-
         if get_vulnes.exists():
             vulne_ids_list = []
             for vulne in get_vulnes:
                 vulne_ids_list.append(vulne['id'])
         else:
-            return Response('Nenhum Host encontrado ! ', status=HTTP_204_NO_CONTENT)
+            return Response('Nenhum registro encontrado', status=HTTP_204_NO_CONTENT)
 
         queryset = Host.objects.filter(vulnerabilities__id__in=vulne_ids_list)
 
@@ -145,9 +153,12 @@ class HostsViewSet(viewsets.ModelViewSet):
         try:
             host_id = request.query_params.get('id')
             queryset = Host.objects.filter(id=host_id)
-            serializer = HostsSerializer(queryset, many=True).data
 
-            return Response({"host": serializer}, status=HTTP_200_OK)
+            if queryset.exists():
+                serializer = HostsSerializer(queryset, many=True).data
+                return Response({"host": serializer}, status=HTTP_200_OK)
+            else:
+                return Response('Nenhum Host encontrado com o ID', status=HTTP_200_OK)
         except Exception as error:
             return Response('Não é possivel carregar o Host solicitado', status=HTTP_500_INTERNAL_SERVER_ERROR)
 
@@ -158,7 +169,7 @@ class HostsViewSet(viewsets.ModelViewSet):
             total_vulne = Vulnerability.objects.all()
 
             if total_vulne.count() < 10:
-                return Response([], status=HTTP_200_OK)
+                return Response({'loaded': False}, status=HTTP_200_OK)
 
             total_vulne_host = total_hosts.distinct('hostname')\
                 .filter(vulnerabilities__corrected=False).count()
@@ -179,7 +190,8 @@ class HostsViewSet(viewsets.ModelViewSet):
                 "totalHosts": total_hosts.count(),
                 "totalHostsVulne": total_vulne_host,
                 "mediaCVSS": str(round(media, 2)),
-                "severity": severity
+                "severity": severity,
+                "loaded": True
             }
             return Response(payload, status=HTTP_200_OK)
         except Exception as error:
@@ -190,7 +202,7 @@ class HostsViewSet(viewsets.ModelViewSet):
         try:
             total_vulnes = Vulnerability.objects.all().count()
             if total_vulnes < 10:
-                return Response([], status=HTTP_200_OK)
+                return Response({"loaded": False}, status=HTTP_200_OK)
 
             severity_low = Vulnerability.objects.filter(severity__istartswith='Baixo', corrected=False)\
                 .values('title', 'severity', 'cvss').distinct('title')
@@ -211,6 +223,7 @@ class HostsViewSet(viewsets.ModelViewSet):
                 "severityMedium": severity_medium_serializer,
                 "severityHigh": severity_high_serializer,
                 "severityCritical": severity_critical_serializer,
+                "loaded": True
             }
             return Response(payload, status=HTTP_200_OK)
         except Exception as error:
@@ -221,7 +234,7 @@ class HostsViewSet(viewsets.ModelViewSet):
         try:
             total_vulnes = Vulnerability.objects.all().count()
             if total_vulnes < 10:
-                return Response([], status=HTTP_200_OK)
+                return Response({"loaded": False}, status=HTTP_200_OK)
 
             queryset = Host.objects.all().order_by('hostname')
             serializer = HostsSerializer(queryset, many=True).data
@@ -239,7 +252,7 @@ class HostsViewSet(viewsets.ModelViewSet):
 
             top_ten_list = sorted(serializer, reverse=True, key=lambda key_value_pair: key_value_pair['cvssTotal'])[:10]
 
-            return Response({"topTen": top_ten_list}, status=HTTP_200_OK)
+            return Response({"topTen": top_ten_list, "loaded": True}, status=HTTP_200_OK)
         except Exception as error:
             return Response('Error ao carregar dados', status=HTTP_500_INTERNAL_SERVER_ERROR)
 
@@ -247,7 +260,7 @@ class HostsViewSet(viewsets.ModelViewSet):
     def import_csv_file(self, request):
 
         if 'file' not in request.data:
-            raise ParseError("Nenhum arquivo enviado")
+            return Response("Nenhum arquivo encontrado", status=HTTP_200_OK)
 
         file = request.data['file']
 
@@ -257,7 +270,7 @@ class HostsViewSet(viewsets.ModelViewSet):
 
             obj_file = HostsFiles.objects.create(key=key, file=file, status='R')
             _id = obj_file.id
-            file_path = f"{settings.MEDIA_ROOT}/{obj_file.file.name}".replace('\\', '/')
+            file_path = f"{settings.MEDIA_ROOT}/{obj_file.file.name}"
 
             if file.name[-3:] == 'csv':
                 exception_list = data_csv_tratament(file_path, obj_file)
@@ -278,12 +291,16 @@ class HostsViewSet(viewsets.ModelViewSet):
 
         except Exception as error:
             HostsFiles.objects.filter(id=_id).update(
-                status='E', exceptions=error)
+                status='E', exception=error)
             return Response(f"Erro interno: {error}", status=HTTP_500_INTERNAL_SERVER_ERROR)
 
     @action(methods=['GET'], detail=False)
     def get_all_files(self, request):
         queryset = HostsFiles.objects.all().order_by('-id')
+
+        if not queryset.exists():
+            return Response({"list": [], "loaded": False}, status=HTTP_200_OK)
+
         serializer = HostsFilesSerializer(queryset, many=True).data
 
         serializer = [{
@@ -295,4 +312,4 @@ class HostsViewSet(viewsets.ModelViewSet):
         }
             for file in serializer]
 
-        return Response(serializer, status=HTTP_200_OK)
+        return Response({"list": serializer, "loaded": True}, status=HTTP_200_OK)

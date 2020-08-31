@@ -66,45 +66,46 @@ def update_host(vulne, host):
 
 def data_csv_tratament(file_path, file):
     exception_list = []
+    count = 0
     try:
-        with open(file_path) as csvfile:
-            readCSV = pd.read_csv(csvfile, delimiter=',', skiprows=1, encoding='utf8')
-            readCSV = readCSV.replace(np.nan, '', regex=True)
-            count = 0
+        readCSV = pd.read_csv(file_path, delimiter=',', skiprows=1, encoding='utf8')
+        readCSV = readCSV.replace(np.nan, '', regex=True)
+        print(readCSV)
 
-            for index, row in readCSV.iterrows():
-                # TODO 0 - ASSET - HOSTNAME | 1 - ASSET - IP_ADDRESS | 2 - VULNERABILITY - TITLE | 3 - VULNERABILITY - SEVERITY | 4 - VULNERABILITY - CVSS | 5 - VULNERABILITY - PUBLICATION_DATE
-                if len(row) != 6:
+        for index, row in readCSV.iterrows():
+            print(row)
+            # TODO 0 - ASSET - HOSTNAME | 1 - ASSET - IP_ADDRESS | 2 - VULNERABILITY - TITLE | 3 - VULNERABILITY - SEVERITY | 4 - VULNERABILITY - CVSS | 5 - VULNERABILITY - PUBLICATION_DATE
+            if len(row) != 6:
+                exception_list.append(
+                    f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao: Não inserido (Linha esta fora do padrao)')
+            else:
+                if row[0] is '':
                     exception_list.append(
-                        f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao: Não inserido (Linha esta fora do padrao)')
+                        f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao: Não inserido (Nome do Host não pode estar vazio)')
+
+                if row[1] is '':
+                    exception_list.append(
+                        f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao: Não inserido (Endereço IP não pode estar vazio)')
+
+                if row[2] is '' or row[3] is '' or row[4] is '':
+                    exception_list.append(
+                        f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao:  Não inserido (Vulnerabilidade deve ser informada por completo)')
+
+                if row[5] is '':
+                    exception_list.append(
+                        f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao:  Não inserido (Data deve ser informada)')
+
                 else:
-                    if row[0] is '':
-                        exception_list.append(
-                            f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao: Não inserido (Nome do Host não pode estar vazio)')
+                    host = Host.objects.filter(hostname=row[0])
 
-                    if row[1] is '':
-                        exception_list.append(
-                            f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao: Não inserido (Endereço IP não pode estar vazio)')
-
-                    if row[2] is '' or row[3] is '' or row[4] is '':
-                        exception_list.append(
-                            f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao:  Não inserido (Vulnerabilidade deve ser informada por completo)')
-
-                    if row[5] is '':
-                        exception_list.append(
-                            f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao:  Não inserido (Data deve ser informada)')
+                    if host.exists():
+                        vulne = create_vulnerabilitie(row)
+                        update_host(vulne, host.first())
 
                     else:
-                        host = Host.objects.filter(hostname=row[0])
-
-                        if host.exists():
-                            vulne = create_vulnerabilitie(row)
-                            update_host(vulne, host.first())
-
-                        else:
-                            vulne = create_vulnerabilitie(row)
-                            create_host(vulne, row)
-                count += 1
+                        vulne = create_vulnerabilitie(row)
+                        create_host(vulne, row)
+            count += 1
 
     except Exception as exception:
         exception_list.append(f'Linha: {count} | HOST: {row[0]} | IP: {row[1]} - Excecao: {exception})')

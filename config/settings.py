@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
 
-
     'django_extensions',
 
     'app.apps.AppConfig',
@@ -125,8 +124,19 @@ elif 'test' in sys.argv:
     }
 
 else:
-    DATABASES = {}
-    DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
+    # DATABASES = {}
+    # DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
+
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "postgres",
+            "USER": "postgres",
+            "PASSWORD": "postgres",
+            "HOST": "localhost",
+            "PORT": 5434,
+        }
+    }
 
     sentry_sdk.init(
         dsn=env.str('DNS_SENTRY'),
@@ -173,7 +183,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 MEDIA_URL = '/media/'
 

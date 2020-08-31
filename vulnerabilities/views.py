@@ -16,6 +16,10 @@ class VulnerabilitiesViewSet(viewsets.ModelViewSet):
         try:
             page = request.query_params.get('page')
             queryset = Vulnerability.objects.all().distinct('title')
+
+            if not queryset.exists():
+                return Response("Nenhuma vulnerabilidade encontrada", status=HTTP_200_OK)
+
             serializer = VulnerabilitiesSerializer(queryset, many=True).data
 
             for vulne in serializer:
@@ -43,6 +47,9 @@ class VulnerabilitiesViewSet(viewsets.ModelViewSet):
             if host is not None and host is not '':
                 vulne_ids = Host.objects.filter(hostname__istartswith=host).values('vulnerabilities__id')
 
+                if not vulne_ids.exists():
+                    return Response("Nenhuma vulnerabilidade encontrada", status=HTTP_200_OK)
+
                 list_vulne_ids = []
                 for vulne in vulne_ids:
                     list_vulne_ids.append(vulne['vulnerabilities__id'])
@@ -62,6 +69,10 @@ class VulnerabilitiesViewSet(viewsets.ModelViewSet):
                 return Response({'listVulnerabilities': list_vulnerabilities}, status=HTTP_200_OK)
             else:
                 vulne = Vulnerability.objects.filter(severity__istartswith=severity).order_by('cvss')
+
+                if not vulne.exists():
+                    return Response("Nenhuma vulnerabilidade encontrada", status=HTTP_200_OK)
+
                 serializer = VulnerabilitiesSerializer(vulne, many=True).data
                 list_vulnerabilities = []
 
