@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
 from hosts.views import HostsViewSet
 from vulnerabilities.views import VulnerabilitiesViewSet
-from app.views import index
+from app.views import FrontendAppView
 
 router = DefaultRouter()
 router.register('hosts', HostsViewSet, basename='host')
@@ -16,8 +16,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('users/', include('users.urls', namespace='users')),
-    path('', index),
-    url(r'^.*/$', index)
+    # path('', index),
+    # url(r'^.*/$', index)
+    path('', FrontendAppView.as_view()),
+    url(r'^.*/$', FrontendAppView.as_view())
 
 ]
 

@@ -70,7 +70,6 @@ def data_csv_tratament(file_path, file):
     try:
         readCSV = pd.read_csv(file_path, delimiter=',', skiprows=1, encoding='utf8')
         readCSV = readCSV.replace(np.nan, '', regex=True)
-        print(readCSV)
 
         for index, row in readCSV.iterrows():
             print(row)

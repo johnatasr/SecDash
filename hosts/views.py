@@ -204,13 +204,13 @@ class HostsViewSet(viewsets.ModelViewSet):
             if total_vulnes < 10:
                 return Response({"loaded": False}, status=HTTP_200_OK)
 
-            severity_low = Vulnerability.objects.filter(severity__istartswith='Baixo', corrected=False)\
+            severity_low = Vulnerability.objects.filter(severity__istartswith='B', corrected=False)\
                 .values('title', 'severity', 'cvss').distinct('title')
-            severity_medium = Vulnerability.objects.filter(severity__istartswith='Médio', corrected=False)\
+            severity_medium = Vulnerability.objects.filter(severity__istartswith='M', corrected=False)\
                 .values('title', 'severity', 'cvss').distinct('title')
-            severity_high = Vulnerability.objects.filter(severity__istartswith='Alto', corrected=False)\
+            severity_high = Vulnerability.objects.filter(severity__istartswith='A', corrected=False)\
                 .values('title', 'severity', 'cvss').distinct('title')
-            severity_critical = Vulnerability.objects.filter(severity__istartswith='Crítico', corrected=False)\
+            severity_critical = Vulnerability.objects.filter(severity__istartswith='C', corrected=False)\
                 .values('title', 'severity', 'cvss').distinct('title')
 
             severity_low_serializer = VulneGraphSerializer(severity_low, many=True).data
