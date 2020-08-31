@@ -124,8 +124,8 @@ elif 'test' in sys.argv:
     }
 
 else:
-    # DATABASES = {}
-    # DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
+    DATABASES = {}
+    DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
 
     DATABASES = {
         "default": {
