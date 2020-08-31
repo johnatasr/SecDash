@@ -1,0 +1,518 @@
+ASSET - HOSTNAME,ASSET - IP_ADDRESS,VULNERABILITY - TITLE,VULNERABILITY - SEVERITY,VULNERABILITY - CVSS,VULNERABILITY - PUBLICATION_DATE
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:3979),Alto,7.8,8/20/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:3872),Alto,7.8,11/14/2019
+WORKSTATION-5,172.18.0.5,Security Updates for Internet Explorer (November 2019),Alto,7.5,11/12/2019
+SERVER-1,172.20.0.1,Security Updates for Internet Explorer (November 2019),Alto,7.5,11/12/2019
+SERVER-2,172.20.0.2,Security Updates for Internet Explorer (November 2019),Alto,7.5,11/12/2019
+SERVER-2,172.20.0.2,KB4525233: Windows 7 and Windows Server 2008 R2 November 2019 Security Update,Alto,8.8,11/12/2019
+SERVER-1,172.20.0.1,KB4525233: Windows 7 and Windows Server 2008 R2 November 2019 Security Update,Alto,8.8,11/12/2019
+WORKSTATION-5,172.18.0.5,KB4525233: Windows 7 and Windows Server 2008 R2 November 2019 Security Update,Alto,8.8,11/12/2019
+WORKSTATION-6,172.18.0.6,KB4523205: Windows 10 Version 1809 and Windows Server 2019 November 2019 Security Update,Alto,7.8,11/12/2019
+WORKSTATION-7,172.18.0.7,KB4523205: Windows 10 Version 1809 and Windows Server 2019 November 2019 Security Update,Alto,7.8,11/12/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : sudo (CESA-2019:3197),Alto,8.8,10/17/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : patch (CESA-2019:2964),Alto,7.8,7/26/2019
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 70.0 Multiple Vulnerabilities,Alto,8.8,6/27/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:3055),Alto,8.8,6/3/2019
+WORKSTATION-5,172.18.0.5,Security Updates for Internet Explorer (October 2019),Alto,7.5,10/8/2019
+SERVER-2,172.20.0.2,KB4520003: Windows 7 and Windows Server 2008 R2 October 2019 Security Update,Alto,7.8,10/8/2019
+WORKSTATION-5,172.18.0.5,KB4520003: Windows 7 and Windows Server 2008 R2 October 2019 Security Update,Alto,7.8,10/8/2019
+SERVER-1,172.20.0.1,KB4520003: Windows 7 and Windows Server 2008 R2 October 2019 Security Update,Alto,7.8,10/8/2019
+SERVER-3,172.20.0.3,KB4519998: Windows 10 Version 1607 and Windows Server 2016 October 2019 Security Update,Alto,7.8,10/8/2019
+WORKSTATION-7,172.18.0.7,KB4519338: Windows 10 Version 1809 and Windows Server 2019 October 2019 Security Update,Alto,7.8,10/8/2019
+WORKSTATION-6,172.18.0.6,KB4519338: Windows 10 Version 1809 and Windows Server 2019 October 2019 Security Update,Alto,7.8,10/8/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:2829),Alto,7.8,9/17/2019
+WORKSTATION-2,172.18.0.2,VMSA-2019-0013 : Command injection and information disclosure vulnerabilities,Alto,8.8,11/20/2017
+WORKSTATION-1,172.18.0.1,VMSA-2019-0013 : Command injection and information disclosure vulnerabilities,Alto,8.8,11/20/2017
+WORKSTATION-3,172.18.0.3,VMSA-2019-0013 : Command injection and information disclosure vulnerabilities,Alto,8.8,11/20/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:2600),Alto,8.3,9/3/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : httpd (CESA-2019:2343),Alto,7.5,4/8/2019
+SERVER-3,172.20.0.3,"Windows 10, Server 2016 and Server 2019 September 2019 Security Update (CVE-2019-1367)",Alto,7.5,9/23/2019
+WORKSTATION-5,172.18.0.5,Security Update for Internet Explorer (CVE-2019-1367),Alto,7.5,9/23/2019
+WORKSTATION-3,172.18.0.3,VMSA-2019-0014 : Use-after-free vulnerability,Alto,8.8,10/10/2019
+WORKSTATION-2,172.18.0.2,VMSA-2019-0014 : Use-after-free vulnerability,Alto,8.8,10/10/2019
+WORKSTATION-1,172.18.0.1,VMSA-2019-0014 : Use-after-free vulnerability,Alto,8.8,10/10/2019
+WORKSTATION-5,172.18.0.5,Security Updates for Internet Explorer (September 2019),Alto,7.5,9/10/2019
+SERVER-3,172.20.0.3,KB4516044: Windows 10 Version 1607 and Windows Server 2016 September 2019 Security Update,Alto,8.8,9/10/2019
+WORKSTATION-5,172.18.0.5,KB4516033: Windows 7 and Windows Server 2008 R2 September 2019 Security Update,Alto,8.8,9/10/2019
+SERVER-1,172.20.0.1,KB4516033: Windows 7 and Windows Server 2008 R2 September 2019 Security Update,Alto,8.8,9/10/2019
+WORKSTATION-7,172.18.0.7,KB4512578: Windows 10 Version 1809 and Windows Server 2019 September 2019 Security Update,Alto,8.8,9/10/2019
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 69.0,Alto,8.8,9/3/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : rsyslog (CESA-2019:2110),Alto,7.5,1/25/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : procps-ng (CESA-2019:2189),Alto,7,5/23/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : polkit (CESA-2019:2046),Alto,8.8,12/3/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : perl-Archive-Tar (CESA-2019:2097),Alto,7.5,6/7/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : patch (CESA-2019:2033),Alto,7.5,2/13/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : libtiff (CESA-2019:2053),Alto,8.8,4/19/2016
+WORKSTATION-4,172.18.0.4,CentOS 7 : libjpeg-turbo (CESA-2019:2052),Alto,8.8,2/13/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : libcgroup (CESA-2019:2047),Alto,8.1,8/14/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : binutils (CESA-2019:2075),Alto,7.8,6/22/2018
+WORKSTATION-8,172.18.0.8,Microsoft Defender Elevation of Privilege Vulnerability (CVE-2019-1161),Alto,7.1,8/13/2019
+SERVER-3,172.20.0.3,Microsoft Defender Elevation of Privilege Vulnerability (CVE-2019-1161),Alto,7.1,8/13/2019
+WORKSTATION-5,172.18.0.5,Security Updates for Internet Explorer (August 2019),Alto,7.5,8/13/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:1873),Alto,7,12/18/2018
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 68.0,Alto,8.3,7/9/2019
+SERVER-2,172.20.0.2,Security Updates for Microsoft .NET Framework (July 2019),Alto,8.8,7/9/2019
+WORKSTATION-7,172.18.0.7,Security Updates for Microsoft .NET Framework (July 2019),Alto,8.8,7/9/2019
+WORKSTATION-5,172.18.0.5,Security Updates for Internet Explorer (July 2019),Alto,7.5,7/9/2019
+WORKSTATION-7,172.18.0.7,KB4507469: Windows 10 Version 1809 and Windows Server 2019 July 2019 Security Update (SWAPGS),Alto,8.8,7/9/2019
+SERVER-1,172.20.0.1,KB4507456: Windows 7 and Windows Server 2008 R2 July 2019 Security Update (SWAPGS),Alto,8.8,7/9/2019
+WORKSTATION-5,172.18.0.5,KB4507456: Windows 7 and Windows Server 2008 R2 July 2019 Security Update (SWAPGS),Alto,8.8,7/9/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : vim (CESA-2019:1619),Alto,8.6,6/5/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:1481) (SACK Panic) (SACK Slowness),Alto,7.5,6/19/2019
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 67.0.3,Alto,8.8,6/18/2019
+WORKSTATION-8,172.18.0.8,VMware Tools 10.2.x / 10.3.x < 10.3.10 Information Disclosure / Denial of Service Vulnerability (VMSA-2019-0009),Alto,7.1,6/6/2019
+WORKSTATION-5,172.18.0.5,Security Updates for Internet Explorer (June 2019),Alto,7.5,6/11/2019
+WORKSTATION-7,172.18.0.7,KB4503327: Windows 10 Version 1809 and Windows Server 2019 June 2019 Security Update,Alto,8.8,6/11/2019
+WORKSTATION-5,172.18.0.5,KB4503269: Windows 7 and Windows Server 2008 R2 June 2019 Security Update,Alto,8.8,6/11/2019
+WORKSTATION-7,172.18.0.7,Security Updates for Microsoft .NET Framework (May 2019),Alto,7.5,5/14/2019
+WORKSTATION-6,172.18.0.6,KB4494441: Windows 10 Version 1809 and Windows Server 2019 May 2019 Security Update (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout),Alto,8.8,5/14/2019
+WORKSTATION-7,172.18.0.7,KB4494441: Windows 10 Version 1809 and Windows Server 2019 May 2019 Security Update (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout),Alto,8.8,5/14/2019
+WORKSTATION-8,172.18.0.8,KB4494440: Windows 10 Version 1607 and Windows Server 2016 May 2019 Security Update (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout),Alto,8.8,5/14/2019
+SERVER-3,172.20.0.3,KB4494440: Windows 10 Version 1607 and Windows Server 2016 May 2019 Security Update (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout),Alto,8.8,5/14/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:0818),Alto,8.1,2/15/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : java-1.8.0-openjdk (CESA-2019:0775),Alto,8.1,4/23/2019
+WORKSTATION-7,172.18.0.7,KB4493470: Windows 10 Version 1607 and Windows Server 2016 April 2019 Security Update,Alto,8.8,4/9/2019
+WORKSTATION-9,172.18.0.9,Apache 2.4.x < 2.4.39 Multiple Vulnerabilities,Alto,7.8,4/1/2019
+WORKSTATION-1,172.18.0.1,"VMSA-2019-0005 : VMware ESXi, Workstation and Fusion updates address multiple security issues",Alto,8.8,4/1/2019
+WORKSTATION-2,172.18.0.2,"VMSA-2019-0005 : VMware ESXi, Workstation and Fusion updates address multiple security issues",Alto,8.8,4/1/2019
+WORKSTATION-3,172.18.0.3,"VMSA-2019-0005 : VMware ESXi, Workstation and Fusion updates address multiple security issues",Alto,8.8,4/1/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : libssh2 (CESA-2019:0679),Alto,8.8,3/21/2019
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 66.0.1,Alto,8.8,3/22/2019
+WORKSTATION-10,172.18.0.10,Elasticsearch ESA-2019-04,Alto,8.1,2/19/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:0512),Alto,7.8,10/3/2018
+SERVER-4,172.20.0.4,RARLAB WinRAR < 5.70 Beta 1 Multiple Vulnerabilities,Alto,7.8,2/20/2019
+WORKSTATION-5,172.18.0.5,RARLAB WinRAR < 5.70 Beta 1 Multiple Vulnerabilities,Alto,7.8,2/20/2019
+SERVER-1,172.20.0.1,RARLAB WinRAR < 5.70 Beta 1 Multiple Vulnerabilities,Alto,7.8,2/20/2019
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 65.0.1,Alto,8.8,2/12/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:0163),Alto,8.1,10/22/2018
+WORKSTATION-9,172.18.0.9,Apache 2.4.x < 2.4.38 Multiple Vulnerabilities,Alto,7.5,1/22/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2018:3651),Alto,7,9/25/2018
+WORKSTATION-2,172.18.0.2,"VMSA-2018-0027 : VMware ESXi, Workstation, and Fusion updates address uninitialized stack memory usage",Alto,8.8,12/4/2018
+WORKSTATION-3,172.18.0.3,"VMSA-2018-0027 : VMware ESXi, Workstation, and Fusion updates address uninitialized stack memory usage",Alto,8.8,12/4/2018
+WORKSTATION-1,172.18.0.1,"VMSA-2018-0027 : VMware ESXi, Workstation, and Fusion updates address uninitialized stack memory usage",Alto,8.8,12/4/2018
+WORKSTATION-3,172.18.0.3,ESXi 6.0 / 6.5 / 6.7 Out-of-Bounds Read Vulnerability (VMSA-2018-0026) (Remote Check),Alto,8.8,10/16/2018
+WORKSTATION-2,172.18.0.2,ESXi 6.0 / 6.5 / 6.7 Out-of-Bounds Read Vulnerability (VMSA-2018-0026) (Remote Check),Alto,8.8,10/16/2018
+WORKSTATION-1,172.18.0.1,ESXi 6.0 / 6.5 / 6.7 Out-of-Bounds Read Vulnerability (VMSA-2018-0026) (Remote Check),Alto,8.8,10/16/2018
+WORKSTATION-3,172.18.0.3,ESXi 6.0 / 6.5 / 6.7 Multiple Vulnerabilities (VMSA-2018-0027) (Remote Check),Alto,8.8,11/9/2018
+WORKSTATION-1,172.18.0.1,ESXi 6.0 / 6.5 / 6.7 Multiple Vulnerabilities (VMSA-2018-0027) (Remote Check),Alto,8.8,11/9/2018
+WORKSTATION-2,172.18.0.2,ESXi 6.0 / 6.5 / 6.7 Multiple Vulnerabilities (VMSA-2018-0027) (Remote Check),Alto,8.8,11/9/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : python (CESA-2018:3041),Alto,7.5,6/18/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : openssl (CESA-2018:3221),Alto,7.5,8/28/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : libmspack (CESA-2018:3327),Alto,8.8,7/28/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2018:3083),Alto,7.8,5/2/2016
+WORKSTATION-4,172.18.0.4,CentOS 7 : fuse (CESA-2018:3324),Alto,7.8,7/24/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : binutils (CESA-2018:3032),Alto,7.8,2/18/2018
+WORKSTATION-8,172.18.0.8,KB4343887: Windows 10 Version 1607 and Windows Server 2016 August 2018 Security Update (Foreshadow),Alto,8.8,8/14/2018
+WORKSTATION-8,172.18.0.8,KB4056890: Windows 10 Version 1607 and Windows Server 2016 January 2018 Security Update (Meltdown)(Spectre),Alto,7.5,1/4/2018
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (January 2018 CPU),Alto,8.3,1/16/2018
+WORKSTATION-9,172.18.0.9,Apache 2.4.x < 2.4.34 Multiple Vulnerabilities,Alto,7.5,7/15/2018
+WORKSTATION-1,172.18.0.1,"VMSA-2018-0026 : VMware ESXi, Workstation, and Fusion updates address an out-of-bounds read vulnerability",Alto,8.8,10/16/2018
+WORKSTATION-3,172.18.0.3,"VMSA-2018-0026 : VMware ESXi, Workstation, and Fusion updates address an out-of-bounds read vulnerability",Alto,8.8,10/16/2018
+WORKSTATION-2,172.18.0.2,"VMSA-2018-0026 : VMware ESXi, Workstation, and Fusion updates address an out-of-bounds read vulnerability",Alto,8.8,10/16/2018
+WORKSTATION-1,172.18.0.1,"VMSA-2018-0018 : VMware Horizon View Agent, VMware ESXi, Workstation, and Fusion updates resolve multiple security issues",Alto,7.8,
+WORKSTATION-2,172.18.0.2,"VMSA-2018-0018 : VMware Horizon View Agent, VMware ESXi, Workstation, and Fusion updates resolve multiple security issues",Alto,7.8,
+WORKSTATION-3,172.18.0.3,"VMSA-2018-0018 : VMware Horizon View Agent, VMware ESXi, Workstation, and Fusion updates resolve multiple security issues",Alto,7.8,
+WORKSTATION-1,172.18.0.1,ESXi 6.5 < Build 6765664 Heap Buffer Overflow (VMSA-2017-0021) (remote check),Alto,7.5,12/19/2017
+WORKSTATION-3,172.18.0.3,ESXi 6.5 < Build 6765664 Heap Buffer Overflow (VMSA-2017-0021) (remote check),Alto,7.5,12/19/2017
+WORKSTATION-2,172.18.0.2,ESXi 6.5 < Build 6765664 Heap Buffer Overflow (VMSA-2017-0021) (remote check),Alto,7.5,12/19/2017
+WORKSTATION-1,172.18.0.1,ESXi 5.5 / 6.0 / 6.5 / Multiple Vulnerabilities (VMSA-2017-0021) (VMSA-2018-0002) (Spectre) (remote check),Alto,7.5,12/19/2017
+WORKSTATION-3,172.18.0.3,ESXi 5.5 / 6.0 / 6.5 / Multiple Vulnerabilities (VMSA-2017-0021) (VMSA-2018-0002) (Spectre) (remote check),Alto,7.5,12/19/2017
+WORKSTATION-2,172.18.0.2,ESXi 5.5 / 6.0 / 6.5 / Multiple Vulnerabilities (VMSA-2017-0021) (VMSA-2018-0002) (Spectre) (remote check),Alto,7.5,12/19/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : yum-utils (CESA-2018:2285),Alto,8.1,8/1/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : tomcat (CESA-2018:2921),Alto,7.5,8/2/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : python (CESA-2018:2123),Alto,7.5,9/1/2016
+WORKSTATION-4,172.18.0.4,CentOS 7 : postgresql (CESA-2018:2557),Alto,7.5,8/9/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : patch (CESA-2018:1200),Alto,7.8,4/6/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : ntp (CESA-2018:0855),Alto,7.8,3/27/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : mariadb (CESA-2018:2439),Alto,7.7,8/8/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2018:2748),Alto,7.8,9/25/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2018:2384) (Foreshadow),Alto,7.8,1/12/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2018:1965) (Spectre),Alto,7,7/24/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2018:1318),Alto,7.8,11/24/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2018:0395),Alto,7.8,10/11/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : java-1.8.0-openjdk (CESA-2018:1191),Alto,8.3,4/19/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : gnupg2 (CESA-2018:2181),Alto,7.5,6/8/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : git (CESA-2018:1957),Alto,7.8,5/30/2018
+WORKSTATION-1,172.18.0.1,"VMSA-2017-0021 : VMware ESXi, vCenter Server Appliance, Workstation and Fusion updates address multiple security vulnerabilities",Alto,7.8,
+WORKSTATION-2,172.18.0.2,"VMSA-2017-0021 : VMware ESXi, vCenter Server Appliance, Workstation and Fusion updates address multiple security vulnerabilities",Alto,7.8,
+WORKSTATION-3,172.18.0.3,"VMSA-2017-0021 : VMware ESXi, vCenter Server Appliance, Workstation and Fusion updates address multiple security vulnerabilities",Alto,7.8,
+WORKSTATION-8,172.18.0.8,KB4074590: Windows 10 Version 1607 and Windows Server 2016 February 2018 Security Update (Meltdown)(Spectre),Alto,7.5,2/13/2018
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (April 2018 CPU),Alto,7.4,4/17/2018
+WORKSTATION-6,172.18.0.6,Windows Defender Antimalware/Antivirus Signature Definition Check,Alto,,
+WORKSTATION-2,172.18.0.2,ESXi 6.5 < Build 5969300 Multiple Vulnerabilities (VMSA-2017-0015) (remote check),Alto,8.8,9/14/2017
+WORKSTATION-1,172.18.0.1,ESXi 6.5 < Build 5969300 Multiple Vulnerabilities (VMSA-2017-0015) (remote check),Alto,8.8,9/14/2017
+WORKSTATION-3,172.18.0.3,ESXi 6.5 < Build 5969300 Multiple Vulnerabilities (VMSA-2017-0015) (remote check),Alto,8.8,9/14/2017
+WORKSTATION-9,172.18.0.9,Apache 2.4.x < 2.4.28 HTTP Vulnerability (OptionsBleed),Alto,7.5,9/18/2017
+WORKSTATION-3,172.18.0.3,"VMSA-2017-0006 : VMware ESXi, Workstation and Fusion updates address critical and moderate security issues",Alto,8.8,
+WORKSTATION-1,172.18.0.1,"VMSA-2017-0015 : VMware ESXi, vCenter Server, Fusion and Workstation updates resolve multiple security vulnerabilities",Alto,8.8,
+WORKSTATION-2,172.18.0.2,"VMSA-2017-0015 : VMware ESXi, vCenter Server, Fusion and Workstation updates resolve multiple security vulnerabilities",Alto,8.8,
+WORKSTATION-3,172.18.0.3,"VMSA-2017-0015 : VMware ESXi, vCenter Server, Fusion and Workstation updates resolve multiple security vulnerabilities",Alto,8.8,
+WORKSTATION-3,172.18.0.3,ESXi 6.5 < Build 5224529 Multiple Vulnerabilities (VMSA-2017-0006) (remote check),Alto,8.8,3/17/2017
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (April 2017 CPU),Alto,8.3,4/18/2017
+WORKSTATION-7,172.18.0.7,Microsoft Windows Unquoted Service Path Enumeration,Alto,7.8,9/15/2012
+WORKSTATION-8,172.18.0.8,Microsoft Windows Unquoted Service Path Enumeration,Alto,7.8,9/15/2012
+SERVER-1,172.20.0.1,Microsoft Windows Unquoted Service Path Enumeration,Alto,7.8,9/15/2012
+SERVER-4,172.20.0.4,Microsoft Windows Update Reboot Required,Alto,7.2,
+SERVER-1,172.20.0.1,Microsoft Windows Update Reboot Required,Alto,7.2,
+WORKSTATION-12,172.18.0.12,Microsoft Windows SMB Shares Unprivileged Access,Alto,7.5,7/14/1999
+SERVER-5,172.20.0.5,Microsoft Windows SMB Shares Unprivileged Access,Alto,7.5,7/14/1999
+WORKSTATION-4,172.18.0.4,SSL Version 2 and 3 Protocol Detection,Alto,7.5,
+SERVER-7,172.20.0.7,SSL Version 2 and 3 Protocol Detection,Alto,7.5,
+SERVER-8,172.20.0.8,SSL Version 2 and 3 Protocol Detection,Alto,7.5,
+SERVER-2,172.20.0.2,SSL Version 2 and 3 Protocol Detection,Alto,7.5,
+SERVER-4,172.20.0.4,SSL Version 2 and 3 Protocol Detection,Alto,7.5,
+SERVER-1,172.20.0.1,SSL Version 2 and 3 Protocol Detection,Alto,7.5,
+WORKSTATION-5,172.18.0.5,SSL Version 2 and 3 Protocol Detection,Alto,7.5,
+SERVER-4,172.20.0.4,SSL Certificate Signed Using Weak Hashing Algorithm,Alto,7.5,8/18/2004
+SERVER-2,172.20.0.2,SSL Certificate Signed Using Weak Hashing Algorithm,Alto,7.5,8/18/2004
+WORKSTATION-5,172.18.0.5,SSL Certificate Signed Using Weak Hashing Algorithm,Alto,7.5,8/18/2004
+SERVER-1,172.20.0.1,SSL Certificate Signed Using Weak Hashing Algorithm,Alto,7.5,8/18/2004
+SERVER-9,172.20.0.9,SSL Certificate Signed Using Weak Hashing Algorithm,Alto,7.5,8/18/2004
+SERVER-8,172.20.0.8,SSL Certificate Signed Using Weak Hashing Algorithm,Alto,7.5,8/18/2004
+WORKSTATION-14,172.18.0.14,SSL Certificate Signed Using Weak Hashing Algorithm,Alto,7.5,8/18/2004
+WORKSTATION-19,172.18.0.19,SNMP Agent Default Community Name (public),Alto,7.5,11/17/1998
+SERVER-4,172.20.0.4,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+WORKSTATION-14,172.18.0.14,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+SERVER-1,172.20.0.1,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+WORKSTATION-16,172.18.0.16,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+SERVER-10,172.20.0.10,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+WORKSTATION-7,172.18.0.7,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+SERVER-2,172.20.0.2,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+SERVER-9,172.20.0.9,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+WORKSTATION-5,172.18.0.5,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+SERVER-8,172.20.0.8,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+WORKSTATION-8,172.18.0.8,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+SERVER-5,172.20.0.5,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+WORKSTATION-6,172.18.0.6,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+WORKSTATION-4,172.18.0.4,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+SERVER-3,172.20.0.3,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+SERVER-6,172.20.0.6,SSL Medium Strength Cipher Suites Supported (SWEET32),Alto,7.5,8/24/2016
+WORKSTATION-2,172.18.0.2,VMSA-2015-0007 : VMware vCenter and ESXi updates address critical security issues,Alto,7.5,
+WORKSTATION-1,172.18.0.1,VMSA-2015-0007 : VMware vCenter and ESXi updates address critical security issues,Alto,7.5,
+WORKSTATION-3,172.18.0.3,VMSA-2015-0007 : VMware vCenter and ESXi updates address critical security issues,Alto,7.5,
+WORKSTATION-4,172.18.0.4,CentOS 7 : systemd (CESA-2019:0201),Baixo,3.3,1/28/2019
+WORKSTATION-5,172.18.0.5,Oracle Java SE 1.7.x < 1.7.0_211 / 1.8.x < 1.8.0_201 / 1.11.x < 1.11.0_2 Multiple Vulnerabilities (January 2019 CPU),Baixo,3.7,1/15/2019
+SERVER-2,172.20.0.2,Oracle Java SE 1.7.x < 1.7.0_211 / 1.8.x < 1.8.0_201 / 1.11.x < 1.11.0_2 Multiple Vulnerabilities (January 2019 CPU),Baixo,3.7,1/15/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : java-1.8.0-openjdk (CESA-2018:2242),Baixo,3.7,7/18/2018
+WORKSTATION-19,172.18.0.19,SSH Weak MAC Algorithms Enabled,Baixo,2.6,
+WORKSTATION-5,172.18.0.5,SSL/TLS Diffie-Hellman Modulus <= 1024 Bits (Logjam),Baixo,3.7,5/20/2015
+SERVER-4,172.20.0.4,SSL/TLS Diffie-Hellman Modulus <= 1024 Bits (Logjam),Baixo,3.7,5/20/2015
+SERVER-2,172.20.0.2,SSL/TLS Diffie-Hellman Modulus <= 1024 Bits (Logjam),Baixo,3.7,5/20/2015
+WORKSTATION-10,172.18.0.10,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+WORKSTATION-4,172.18.0.4,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+WORKSTATION-20,172.18.0.20,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+WORKSTATION-21,172.18.0.21,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+WORKSTATION-3,172.18.0.3,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+WORKSTATION-1,172.18.0.1,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+WORKSTATION-2,172.18.0.2,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+SERVER-7,172.20.0.7,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+WORKSTATION-19,172.18.0.19,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+SERVER-11,172.20.0.11,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+SERVER-12,172.20.0.12,SSH Server CBC Mode Ciphers Enabled,Baixo,2.6,11/24/2008
+SERVER-2,172.20.0.2,Transport Layer Security (TLS) Protocol CRIME Vulnerability,Baixo,2.6,9/15/2012
+SERVER-1,172.20.0.1,Terminal Services Encryption Level is not FIPS-140 Compliant,Baixo,2.6,
+WORKSTATION-12,172.18.0.12,Terminal Services Encryption Level is not FIPS-140 Compliant,Baixo,2.6,
+WORKSTATION-9,172.18.0.9,Web Server HTTP Header Internal IP Disclosure,Baixo,3.1,7/13/2000
+SERVER-8,172.20.0.8,SSL Certificate Chain Contains RSA Keys Less Than 2048 bits,Baixo,,
+SERVER-2,172.20.0.2,SSL Certificate Chain Contains RSA Keys Less Than 2048 bits,Baixo,,
+SERVER-4,172.20.0.4,SSL Certificate Chain Contains RSA Keys Less Than 2048 bits,Baixo,,
+WORKSTATION-5,172.18.0.5,SSL Certificate Chain Contains RSA Keys Less Than 2048 bits,Baixo,,
+WORKSTATION-3,172.18.0.3,VMSA-2019-0022 : VMware ESXi updates address OpenSLP remote code execution vulnerability,Cr¡tico,9.8,12/6/2019
+WORKSTATION-2,172.18.0.2,VMSA-2019-0022 : VMware ESXi updates address OpenSLP remote code execution vulnerability,Cr¡tico,9.8,12/6/2019
+WORKSTATION-1,172.18.0.1,VMSA-2019-0022 : VMware ESXi updates address OpenSLP remote code execution vulnerability,Cr¡tico,9.8,12/6/2019
+WORKSTATION-5,172.18.0.5,Oracle Java SE 1.7.0_241 / 1.8.0_231 / 1.11.0_5 / 1.13.0_1 Multiple Vulnerabilities (Oct 2019 CPU) (Windows),Cr¡tico,9.8,10/15/2019
+SERVER-3,172.20.0.3,Oracle Java SE 1.7.0_241 / 1.8.0_231 / 1.11.0_5 / 1.13.0_1 Multiple Vulnerabilities (Oct 2019 CPU) (Windows),Cr¡tico,9.8,10/15/2019
+SERVER-2,172.20.0.2,Oracle Java SE 1.7.0_241 / 1.8.0_231 / 1.11.0_5 / 1.13.0_1 Multiple Vulnerabilities (Oct 2019 CPU) (Windows),Cr¡tico,9.8,10/15/2019
+WORKSTATION-7,172.18.0.7,Adobe Flash Player <= 32.0.0.238 (APSB19-46),Cr¡tico,9.8,9/10/2019
+WORKSTATION-7,172.18.0.7,KB4516115: Security update for Adobe Flash Player (September 2019),Cr¡tico,9.8,9/10/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : unixODBC (CESA-2019:2336),Cr¡tico,9.8,2/22/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : tomcat (CESA-2019:2205),Cr¡tico,9.8,2/23/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : systemd (CESA-2019:2091),Cr¡tico,9.8,10/26/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : python-urllib3 (CESA-2019:2272),Cr¡tico,9.8,12/11/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : python-requests (CESA-2019:2035),Cr¡tico,9.8,10/9/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : python (CESA-2019:2030),Cr¡tico,9.1,9/25/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : ntp (CESA-2019:2077),Cr¡tico,9.8,6/20/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : libssh2 (CESA-2019:2136),Cr¡tico,9.1,3/21/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : gdm / libX11 / libxkbcommon / xorg-x11-drv-ati / xorg-x11-drv-vesa / etc (CESA-2019:2079),Cr¡tico,9.8,8/24/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : elfutils (CESA-2019:2197),Cr¡tico,9.8,8/29/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : curl (CESA-2019:2181),Cr¡tico,9.1,10/31/2018
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 68.0.2,Cr¡tico,9.8,8/14/2019
+WORKSTATION-5,172.18.0.5,KB4512486: Windows 7 and Windows Server 2008 R2 August 2019 Security Update,Cr¡tico,9.8,8/13/2019
+SERVER-1,172.20.0.1,KB4512486: Windows 7 and Windows Server 2008 R2 August 2019 Security Update,Cr¡tico,9.8,8/13/2019
+WORKSTATION-7,172.18.0.7,KB4511553: Windows 10 Version 1809 and Windows Server 2019 August 2019 Security Update,Cr¡tico,9.8,8/13/2019
+WORKSTATION-1,172.18.0.1,VMSA-2019-0012 : Out-of-bounds pixel shader vulnerabilities,Cr¡tico,10,8/6/2019
+WORKSTATION-3,172.18.0.3,VMSA-2019-0012 : Out-of-bounds pixel shader vulnerabilities,Cr¡tico,10,8/6/2019
+WORKSTATION-2,172.18.0.2,VMSA-2019-0012 : Out-of-bounds pixel shader vulnerabilities,Cr¡tico,10,8/6/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : libssh2 (CESA-2019:1884),Cr¡tico,9.1,3/21/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : httpd (CESA-2019:1898),Cr¡tico,9.8,3/26/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : curl (CESA-2019:1880),Cr¡tico,9.8,9/5/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : python (CESA-2019:1587),Cr¡tico,9.8,6/7/2019
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 67.0.4,Cr¡tico,10,6/20/2019
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 67.0,Cr¡tico,9.8,2/4/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : wget (CESA-2019:1228),Cr¡tico,9.8,5/17/2019
+SERVER-1,172.20.0.1,KB4499175: Windows 7 and Windows Server 2008 R2 May 2019 Security Update (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout) (BlueKeep),Cr¡tico,9.8,5/14/2019
+WORKSTATION-5,172.18.0.5,KB4499175: Windows 7 and Windows Server 2008 R2 May 2019 Security Update (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout) (BlueKeep),Cr¡tico,9.8,5/14/2019
+SERVER-2,172.20.0.2,KB4499175: Windows 7 and Windows Server 2008 R2 May 2019 Security Update (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout) (BlueKeep),Cr¡tico,9.8,5/14/2019
+SERVER-2,172.20.0.2,Oracle Java SE 1.7.0_221 / 1.8.0_211 / 1.11.0_3 / 1.12.0_1 Multiple Vulnerabilities (Apr 2019 CPU),Cr¡tico,9,4/16/2019
+WORKSTATION-5,172.18.0.5,Oracle Java SE 1.7.0_221 / 1.8.0_211 / 1.11.0_3 / 1.12.0_1 Multiple Vulnerabilities (Apr 2019 CPU),Cr¡tico,9,4/16/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : python (CESA-2019:0710),Cr¡tico,9.8,3/8/2019
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 66.0,Cr¡tico,9.8,3/19/2019
+WORKSTATION-9,172.18.0.9,Apache 2.4.x < 2.4.33 Multiple Vulnerabilities,Cr¡tico,9.8,3/21/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : systemd (CESA-2019:0049),Cr¡tico,9.8,10/26/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : perl (CESA-2019:0109),Cr¡tico,9.8,12/7/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : NetworkManager (CESA-2018:3665),Cr¡tico,9.8,10/26/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : PackageKit / accountsservice / adwaita-icon-theme / appstream-data / at-spi2-atk / etc (CESA-2018:3140),Cr¡tico,9.8,5/4/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : glibc (CESA-2018:3092),Cr¡tico,9.8,12/18/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : git (CESA-2018:3408),Cr¡tico,9.8,10/6/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : freeglut / libX11 / libXcursor / libXfont / libXfont2 / libXres / libdrm / libepoxy / etc (CESA-2018:3059),Cr¡tico,9.8,8/1/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : curl / nss-pem (CESA-2018:3157),Cr¡tico,9.8,1/24/2018
+SERVER-2,172.20.0.2,Oracle Java SE Multiple Vulnerabilities (October 2018 CPU),Cr¡tico,9,10/16/2018
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (October 2018 CPU),Cr¡tico,9,10/16/2018
+WORKSTATION-5,172.18.0.5,Oracle Java SE Multiple Vulnerabilities (October 2018 CPU),Cr¡tico,9,10/16/2018
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (July 2018 CPU),Cr¡tico,9,7/17/2018
+WORKSTATION-9,172.18.0.9,Apache 2.4.x < 2.4.33 Multiple Vulnerabilities (deprecated),Cr¡tico,9.8,3/23/2018
+WORKSTATION-11,172.18.0.11,Pivotal Software Redis LUA < 3.2.12 / 4.0.x < 4.0.10 / 5.0 < 5.0rc2 Multiple Vulnerabilities,Cr¡tico,9.8,6/14/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : procps-ng (CESA-2018:1700),Cr¡tico,9.8,5/23/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : java-1.8.0-openjdk (CESA-2018:2942),Cr¡tico,9,10/17/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : glibc (CESA-2018:0805),Cr¡tico,9.8,2/24/2015
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (October 2017 CPU),Cr¡tico,9.8,10/17/2017
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (July 2017 CPU),Cr¡tico,9.6,7/18/2017
+WORKSTATION-11,172.18.0.11,Redis Server Unprotected by Password Authentication,Cr¡tico,9.8,
+WORKSTATION-8,172.18.0.8,KB4022715: Windows 10 Version 1607 and Windows Server 2016 June 2017 Cumulative Update,Cr¡tico,9.8,6/13/2017
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (July 2016 CPU),Cr¡tico,9.6,4/23/2016
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (January 2017 CPU) (SWEET32),Cr¡tico,9.6,8/24/2016
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (October 2016 CPU),Cr¡tico,9.6,10/18/2016
+SERVER-3,172.20.0.3,Oracle Java JDK / JRE 6 < Update 43 Remote Code Execution (Windows),Cr¡tico,10,2/28/2013
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (April 2016 CPU),Cr¡tico,9.6,4/19/2016
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (April 2014 CPU),Cr¡tico,9.8,4/15/2014
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (January 2016 CPU) (SLOTH),Cr¡tico,9.8,8/14/2015
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (February 2013 CPU Update 1),Cr¡tico,10,2/19/2013
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (January 2015 CPU) (POODLE),Cr¡tico,9.8,10/14/2014
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (June 2012 CPU),Cr¡tico,9.8,6/12/2012
+SERVER-3,172.20.0.3,Oracle Java JDK / JRE 6 < Update 30 Multiple Vulnerabilities,Cr¡tico,9.8,3/4/2008
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (February 2013 CPU),Cr¡tico,9.8,1/19/2013
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (July 2014 CPU),Cr¡tico,9.8,7/15/2014
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (October 2012 CPU),Cr¡tico,9.8,10/16/2012
+SERVER-4,172.20.0.4,Microsoft SQL Server Unsupported Version Detection,Cr¡tico,10,
+WORKSTATION-5,172.18.0.5,Microsoft SQL Server Unsupported Version Detection,Cr¡tico,10,
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (October 2013 CPU),Cr¡tico,9.8,10/15/2013
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (February 2012 CPU),Cr¡tico,9.8,2/14/2012
+SERVER-1,172.20.0.1,Microsoft XML Parser (MSXML) and XML Core Services Unsupported,Cr¡tico,10,
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (January 2014 CPU),Cr¡tico,9.8,1/14/2014
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (April 2015 CPU) (FREAK),Cr¡tico,9.8,4/14/2015
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (June 2013 CPU),Cr¡tico,9.8,6/18/2013
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (July 2015 CPU) (Bar Mitzvah),Cr¡tico,9.8,7/14/2015
+SERVER-3,172.20.0.3,Oracle Java JDK / JRE 6 < Update 35 SunToolKit getField() and getMethod() Access Issue,Cr¡tico,9.8,8/10/2012
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (October 2014 CPU),Cr¡tico,9.8,10/14/2014
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (October 2015 CPU),Cr¡tico,9.8,10/20/2015
+WORKSTATION-16,172.18.0.16,Unix Operating System Unsupported Version Detection,Cr¡tico,10,
+SERVER-3,172.20.0.3,Oracle Java SE Multiple Vulnerabilities (April 2013 CPU),Cr¡tico,9.8,3/6/2013
+WORKSTATION-1,172.18.0.1,VMware ESXi 5.5 / 6.0 / 6.5 / 6.7 DoS (VMSA-2018-0018) (remote check),M‚dio,6.5,7/19/2018
+WORKSTATION-2,172.18.0.2,VMware ESXi 5.5 / 6.0 / 6.5 / 6.7 DoS (VMSA-2018-0018) (remote check),M‚dio,6.5,7/19/2018
+WORKSTATION-3,172.18.0.3,VMware ESXi 5.5 / 6.0 / 6.5 / 6.7 DoS (VMSA-2018-0018) (remote check),M‚dio,6.5,7/19/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : tcpdump (CESA-2019:3976),M‚dio,5.5,11/25/2018
+WORKSTATION-3,172.18.0.3,VMSA-2019-0020 : Hypervisor-Specific Mitigations for Denial-of-Service and Speculative-Execution Vulnerabilities,M‚dio,6.5,11/14/2019
+WORKSTATION-2,172.18.0.2,VMSA-2019-0020 : Hypervisor-Specific Mitigations for Denial-of-Service and Speculative-Execution Vulnerabilities,M‚dio,6.5,11/14/2019
+WORKSTATION-1,172.18.0.1,VMSA-2019-0020 : Hypervisor-Specific Mitigations for Denial-of-Service and Speculative-Execution Vulnerabilities,M‚dio,6.5,11/14/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:3834),M‚dio,6.5,11/14/2019
+WORKSTATION-3,172.18.0.3,VMSA-2019-0019 : Denial-of-service vulnerability,M‚dio,6.5,10/28/2019
+WORKSTATION-2,172.18.0.2,VMSA-2019-0019 : Denial-of-service vulnerability,M‚dio,6.5,10/28/2019
+WORKSTATION-1,172.18.0.1,VMSA-2019-0019 : Denial-of-service vulnerability,M‚dio,6.5,10/28/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : java-1.8.0-openjdk (CESA-2019:3128),M‚dio,4.8,10/16/2019
+WORKSTATION-9,172.18.0.9,VMware vCenter Server 6.0 / 6.5 / 6.7 Multiple Vulnerabilities (VMSA-2019-0013),M‚dio,5.4,9/18/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:2029),M‚dio,6.7,3/8/2018
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 69.0.1,M‚dio,4.3,9/18/2019
+SERVER-3,172.20.0.3,Security Updates for Microsoft .NET Framework (September 2019),M‚dio,5.5,9/10/2019
+WORKSTATION-7,172.18.0.7,Security Updates for Microsoft .NET Framework (September 2019),M‚dio,5.5,9/10/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : unzip (CESA-2019:2159),M‚dio,5.5,10/16/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : openssl (CESA-2019:2304),M‚dio,5.9,10/30/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : openssh (CESA-2019:2143),M‚dio,5.3,8/17/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : nspr / nss / nss-softokn / nss-util (CESA-2019:2237),M‚dio,5.9,6/13/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : mariadb (CESA-2019:2327),M‚dio,5,7/18/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : linux-firmware (CESA-2019:2169),M‚dio,6.8,8/7/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : libmspack (CESA-2019:2049),M‚dio,4.3,10/23/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : glibc (CESA-2019:2118),M‚dio,5.3,1/21/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : java-1.8.0-openjdk (CESA-2019:1815),M‚dio,4.8,7/23/2019
+SERVER-3,172.20.0.3,Oracle Java SE 1.7.0_231 / 1.8.0_221 / 1.11.0_4 / 1.12.0_2 Multiple Vulnerabilities (Jul 2019 CPU),M‚dio,4.8,7/16/2019
+SERVER-2,172.20.0.2,Oracle Java SE 1.7.0_231 / 1.8.0_221 / 1.11.0_4 / 1.12.0_2 Multiple Vulnerabilities (Jul 2019 CPU),M‚dio,4.8,7/16/2019
+WORKSTATION-5,172.18.0.5,Oracle Java SE 1.7.0_231 / 1.8.0_221 / 1.11.0_4 / 1.12.0_2 Multiple Vulnerabilities (Jul 2019 CPU),M‚dio,4.8,7/16/2019
+WORKSTATION-2,172.18.0.2,VMSA-2019-0011 : ESXi patches address partial denial of service vulnerability in hostd process,M‚dio,5.3,7/11/2019
+WORKSTATION-3,172.18.0.3,VMSA-2019-0011 : ESXi patches address partial denial of service vulnerability in hostd process,M‚dio,5.3,7/11/2019
+WORKSTATION-1,172.18.0.1,VMSA-2019-0011 : ESXi patches address partial denial of service vulnerability in hostd process,M‚dio,5.3,7/11/2019
+WORKSTATION-8,172.18.0.8,Mozilla Firefox < 67.0.2,M‚dio,6.5,6/11/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2019:1168) (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout),M‚dio,5.6,5/30/2019
+WORKSTATION-1,172.18.0.1,VMSA-2019-0008 : MDS Vulnerabilities (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout),M‚dio,5.6,5/30/2019
+WORKSTATION-3,172.18.0.3,VMSA-2019-0008 : MDS Vulnerabilities (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout),M‚dio,5.6,5/30/2019
+WORKSTATION-2,172.18.0.2,VMSA-2019-0008 : MDS Vulnerabilities (MDSUM/RIDL) (MFBDS/RIDL/ZombieLoad) (MLPDS/RIDL) (MSBDS/Fallout),M‚dio,5.6,5/30/2019
+WORKSTATION-1,172.18.0.1,"VMSA-2019-0006 : VMware ESXi, Workstation and Fusion updates address multiple out-of-bounds read vulnerabilities",M‚dio,6.8,4/15/2019
+WORKSTATION-3,172.18.0.3,"VMSA-2019-0006 : VMware ESXi, Workstation and Fusion updates address multiple out-of-bounds read vulnerabilities",M‚dio,6.8,4/15/2019
+WORKSTATION-2,172.18.0.2,"VMSA-2019-0006 : VMware ESXi, Workstation and Fusion updates address multiple out-of-bounds read vulnerabilities",M‚dio,6.8,4/15/2019
+WORKSTATION-3,172.18.0.3,ESXi 6.0 / 6.5 / 6.7 Multiple Vulnerabilities (VMSA-2019-0005) (Remote Check),M‚dio,6.8,3/28/2019
+WORKSTATION-2,172.18.0.2,ESXi 6.0 / 6.5 / 6.7 Multiple Vulnerabilities (VMSA-2019-0005) (Remote Check),M‚dio,6.8,3/28/2019
+WORKSTATION-1,172.18.0.1,ESXi 6.0 / 6.5 / 6.7 Multiple Vulnerabilities (VMSA-2019-0005) (Remote Check),M‚dio,6.8,3/28/2019
+WORKSTATION-7,172.18.0.7,Security Updates for Windows 10 / Windows Server 2019 (February 2019) (Spectre) (Meltdown) (Foreshadow),M‚dio,5.5,5/22/2018
+WORKSTATION-7,172.18.0.7,Security Updates for Windows 10 / Windows Server 2016 / Windows Server 2019 (March 2019) (Spectre) (Meltdown) (Foreshadow),M‚dio,5.5,5/22/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : tomcat (CESA-2019:0485),M‚dio,4.3,10/4/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : openssl (CESA-2019:0483),M‚dio,4.7,11/15/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : systemd (CESA-2019:0368),M‚dio,5.5,3/21/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : polkit (CESA-2019:0230),M‚dio,6.7,1/11/2019
+WORKSTATION-8,172.18.0.8,Security Updates for Windows 10 / Windows Server 2016 (January 2019) (Spectre),M‚dio,5.6,1/4/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : gnutls (CESA-2018:3050),M‚dio,5.9,8/22/2018
+WORKSTATION-10,172.18.0.10,Elasticsearch ESA-2018-16,M‚dio,6.5,11/6/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : wpa_supplicant (CESA-2018:3107),M‚dio,6.5,8/8/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : wget (CESA-2018:3052),M‚dio,6.5,5/6/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : setup (CESA-2018:3249),M‚dio,5.3,7/3/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : krb5 (CESA-2018:3071),M‚dio,4.7,3/6/2018
+WORKSTATION-9,172.18.0.9,Apache 2.4.x < 2.4.35 DoS,M‚dio,5.9,9/25/2018
+WORKSTATION-3,172.18.0.3,"VMSA-2018-0012 : VMware vSphere, Workstation and Fusion updates enable Hypervisor-Assisted Guest Mitigations for Speculative Store Bypass issue (Spectre)",M‚dio,5.6,
+WORKSTATION-2,172.18.0.2,"VMSA-2018-0012 : VMware vSphere, Workstation and Fusion updates enable Hypervisor-Assisted Guest Mitigations for Speculative Store Bypass issue (Spectre)",M‚dio,5.6,
+WORKSTATION-1,172.18.0.1,"VMSA-2018-0012 : VMware vSphere, Workstation and Fusion updates enable Hypervisor-Assisted Guest Mitigations for Speculative Store Bypass issue (Spectre)",M‚dio,5.6,
+WORKSTATION-9,172.18.0.9,VMware vCenter Server 5.5.x / 6.0.x / 6.5.x / 6.7.x Speculative Execution Side Channel Vulnerability (Foreshadow) (VMSA-2018-0020),M‚dio,5.6,8/14/2018
+WORKSTATION-3,172.18.0.3,ESXi 5.5 / 6.0 / 6.5 / 6.7 Speculative Execution Side Channel Vulnerability (Foreshadow) (VMSA-2018-0020) (remote check),M‚dio,5.6,8/14/2018
+WORKSTATION-1,172.18.0.1,ESXi 5.5 / 6.0 / 6.5 / 6.7 Speculative Execution Side Channel Vulnerability (Foreshadow) (VMSA-2018-0020) (remote check),M‚dio,5.6,8/14/2018
+WORKSTATION-2,172.18.0.2,ESXi 5.5 / 6.0 / 6.5 / 6.7 Speculative Execution Side Channel Vulnerability (Foreshadow) (VMSA-2018-0020) (remote check),M‚dio,5.6,8/14/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : policycoreutils (CESA-2018:0913),M‚dio,4.4,3/2/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : openssl (CESA-2018:0998),M‚dio,6.5,11/2/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : openssh (CESA-2018:0980),M‚dio,5.3,10/26/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : nss (CESA-2018:2768),M‚dio,5.9,4/29/2019
+WORKSTATION-4,172.18.0.4,CentOS 7 : krb5 (CESA-2018:0666),M‚dio,6.5,8/9/2017
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2018:1852),M‚dio,5.6,6/21/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : kernel (CESA-2018:1629) (Spectre),M‚dio,5.5,5/22/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : java-1.8.0-openjdk (CESA-2018:1649) (Spectre),M‚dio,5.5,5/22/2018
+WORKSTATION-4,172.18.0.4,CentOS 7 : gcc (CESA-2018:0849),M‚dio,4,7/26/2017
+WORKSTATION-9,172.18.0.9,VMware vCenter Server 5.5.x < 5.5U3g / 6.0.x < 6.0U3d / 6.5.x < 6.5U1e Hypervisor-Assisted Guest Remediation (VMSA-2018-0004) (Spectre),M‚dio,5.6,1/3/2018
+WORKSTATION-1,172.18.0.1,"VMSA-2018-0004 : VMware vSphere, Workstation and Fusion updates add Hypervisor-Assisted Guest Remediation for speculative execution issue (Spectre)",M‚dio,5.6,1/4/2018
+WORKSTATION-2,172.18.0.2,"VMSA-2018-0004 : VMware vSphere, Workstation and Fusion updates add Hypervisor-Assisted Guest Remediation for speculative execution issue (Spectre)",M‚dio,5.6,1/4/2018
+WORKSTATION-3,172.18.0.3,"VMSA-2018-0004 : VMware vSphere, Workstation and Fusion updates add Hypervisor-Assisted Guest Remediation for speculative execution issue (Spectre)",M‚dio,5.6,1/4/2018
+WORKSTATION-2,172.18.0.2,"VMSA-2018-0002 : VMware ESXi, Workstation and Fusion updates address side-channel analysis due to speculative execution. (Spectre)",M‚dio,5.6,
+WORKSTATION-3,172.18.0.3,"VMSA-2018-0002 : VMware ESXi, Workstation and Fusion updates address side-channel analysis due to speculative execution. (Spectre)",M‚dio,5.6,
+WORKSTATION-1,172.18.0.1,"VMSA-2018-0002 : VMware ESXi, Workstation and Fusion updates address side-channel analysis due to speculative execution. (Spectre)",M‚dio,5.6,
+WORKSTATION-12,172.18.0.12,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-3,172.18.0.3,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+SERVER-3,172.20.0.3,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-2,172.18.0.2,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-9,172.18.0.9,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+SERVER-2,172.20.0.2,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+SERVER-4,172.20.0.4,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-13,172.18.0.13,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+SERVER-5,172.20.0.5,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-14,172.18.0.14,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+SERVER-6,172.20.0.6,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+SERVER-7,172.20.0.7,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+SERVER-8,172.20.0.8,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-4,172.18.0.4,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-8,172.18.0.8,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-6,172.18.0.6,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-5,172.18.0.5,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-15,172.18.0.15,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-7,172.18.0.7,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+SERVER-9,172.20.0.9,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-16,172.18.0.16,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+SERVER-1,172.20.0.1,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-17,172.18.0.17,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+SERVER-10,172.20.0.10,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-18,172.18.0.18,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-1,172.18.0.1,TLS Version 1.0 Protocol Detection,M‚dio,6.5,
+WORKSTATION-9,172.18.0.9,VMware vCenter Server 6.5.x < 6.5u1f Multiple Vulnerabilities (VMSA-2018-0007) (Spectre-1) (Meltdown),M‚dio,5.6,1/2/2018
+WORKSTATION-18,172.18.0.18,AMQP Cleartext Authentication,M‚dio,4.3,
+WORKSTATION-11,172.18.0.11,AMQP Cleartext Authentication,M‚dio,4.3,
+SERVER-1,172.20.0.1,VMware vSphere Update Manager Java Vulnerability (VMSA-2015-0003),M‚dio,4,1/20/2015
+SERVER-9,172.20.0.9,DNS Server Cache Snooping Remote Information Disclosure,M‚dio,5.3,
+SERVER-3,172.20.0.3,DNS Server Cache Snooping Remote Information Disclosure,M‚dio,5.3,
+WORKSTATION-12,172.18.0.12,Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness,M‚dio,5.1,5/28/2005
+SERVER-1,172.20.0.1,Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness,M‚dio,5.1,5/28/2005
+SERVER-1,172.20.0.1,Terminal Services Encryption Level is Medium or Low,M‚dio,4.3,
+WORKSTATION-12,172.18.0.12,Terminal Services Encryption Level is Medium or Low,M‚dio,4.3,
+WORKSTATION-2,172.18.0.2,SNMP 'GETBULK' Reflection DDoS,M‚dio,5,
+WORKSTATION-19,172.18.0.19,SNMP 'GETBULK' Reflection DDoS,M‚dio,5,
+WORKSTATION-13,172.18.0.13,SNMP 'GETBULK' Reflection DDoS,M‚dio,5,
+SERVER-1,172.20.0.1,SSL Certificate with Wrong Hostname,M‚dio,5.3,
+SERVER-4,172.20.0.4,SSL Certificate with Wrong Hostname,M‚dio,5.3,
+SERVER-6,172.20.0.6,SSL Certificate with Wrong Hostname,M‚dio,5.3,
+SERVER-8,172.20.0.8,SSL Certificate with Wrong Hostname,M‚dio,5.3,
+WORKSTATION-5,172.18.0.5,SSL Certificate with Wrong Hostname,M‚dio,5.3,
+WORKSTATION-14,172.18.0.14,SSL Certificate with Wrong Hostname,M‚dio,5.3,
+SERVER-6,172.20.0.6,Terminal Services Doesn't Use Network Level Authentication (NLA) Only,M‚dio,4,
+WORKSTATION-8,172.18.0.8,Terminal Services Doesn't Use Network Level Authentication (NLA) Only,M‚dio,4,
+SERVER-1,172.20.0.1,Terminal Services Doesn't Use Network Level Authentication (NLA) Only,M‚dio,4,
+SERVER-5,172.20.0.5,Terminal Services Doesn't Use Network Level Authentication (NLA) Only,M‚dio,4,
+WORKSTATION-12,172.18.0.12,Terminal Services Doesn't Use Network Level Authentication (NLA) Only,M‚dio,4,
+SERVER-5,172.20.0.5,DNS Server Dynamic Update Record Injection,M‚dio,5,
+SERVER-1,172.20.0.1,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+SERVER-6,172.20.0.6,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+WORKSTATION-5,172.18.0.5,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+SERVER-4,172.20.0.4,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+SERVER-5,172.20.0.5,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+WORKSTATION-14,172.18.0.14,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+SERVER-3,172.20.0.3,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+WORKSTATION-16,172.18.0.16,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+SERVER-8,172.20.0.8,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+SERVER-2,172.20.0.2,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+WORKSTATION-7,172.18.0.7,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+WORKSTATION-4,172.18.0.4,SSL RC4 Cipher Suites Supported (Bar Mitzvah),M‚dio,5.9,3/12/2013
+WORKSTATION-19,172.18.0.19,SSH Weak Algorithms Supported,M‚dio,4.3,
+SERVER-2,172.20.0.2,SSLv3 Padding Oracle On Downgraded Legacy Encryption Vulnerability (POODLE),M‚dio,6.8,10/14/2014
+WORKSTATION-5,172.18.0.5,SSLv3 Padding Oracle On Downgraded Legacy Encryption Vulnerability (POODLE),M‚dio,6.8,10/14/2014
+SERVER-1,172.20.0.1,SSLv3 Padding Oracle On Downgraded Legacy Encryption Vulnerability (POODLE),M‚dio,6.8,10/14/2014
+SERVER-8,172.20.0.8,SSLv3 Padding Oracle On Downgraded Legacy Encryption Vulnerability (POODLE),M‚dio,6.8,10/14/2014
+SERVER-4,172.20.0.4,SSLv3 Padding Oracle On Downgraded Legacy Encryption Vulnerability (POODLE),M‚dio,6.8,10/14/2014
+WORKSTATION-7,172.18.0.7,SMB Signing not required,M‚dio,5.3,1/17/2012
+WORKSTATION-14,172.18.0.14,SMB Signing not required,M‚dio,5.3,1/17/2012
+SERVER-6,172.20.0.6,SMB Signing not required,M‚dio,5.3,1/17/2012
+SERVER-1,172.20.0.1,SMB Signing not required,M‚dio,5.3,1/17/2012
+WORKSTATION-12,172.18.0.12,SMB Signing not required,M‚dio,5.3,1/17/2012
+WORKSTATION-15,172.18.0.15,SMB Signing not required,M‚dio,5.3,1/17/2012
+SERVER-2,172.20.0.2,SMB Signing not required,M‚dio,5.3,1/17/2012
+SERVER-4,172.20.0.4,SMB Signing not required,M‚dio,5.3,1/17/2012
+WORKSTATION-17,172.18.0.17,SMB Signing not required,M‚dio,5.3,1/17/2012
+SERVER-8,172.20.0.8,SMB Signing not required,M‚dio,5.3,1/17/2012
+WORKSTATION-5,172.18.0.5,SMB Signing not required,M‚dio,5.3,1/17/2012
+WORKSTATION-5,172.18.0.5,SSL DROWN Attack Vulnerability (Decrypting RSA with Obsolete and Weakened eNcryption),M‚dio,5.9,3/1/2016
+SERVER-2,172.20.0.2,SSL DROWN Attack Vulnerability (Decrypting RSA with Obsolete and Weakened eNcryption),M‚dio,5.9,3/1/2016
+SERVER-7,172.20.0.7,Web Server Generic 3xx Redirect,M‚dio,4.3,
+WORKSTATION-4,172.18.0.4,HTTP TRACE / TRACK Methods Allowed,M‚dio,5.3,1/20/2003
+SERVER-7,172.20.0.7,HTTP TRACE / TRACK Methods Allowed,M‚dio,5.3,1/20/2003
+SERVER-6,172.20.0.6,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+WORKSTATION-5,172.18.0.5,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+SERVER-2,172.20.0.2,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+SERVER-1,172.20.0.1,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+SERVER-10,172.20.0.10,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+WORKSTATION-8,172.18.0.8,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+SERVER-9,172.20.0.9,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+WORKSTATION-9,172.18.0.9,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+SERVER-4,172.20.0.4,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+SERVER-5,172.20.0.5,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+SERVER-3,172.20.0.3,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+WORKSTATION-4,172.18.0.4,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+WORKSTATION-7,172.18.0.7,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+SERVER-8,172.20.0.8,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+WORKSTATION-16,172.18.0.16,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+WORKSTATION-14,172.18.0.14,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+WORKSTATION-18,172.18.0.18,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+WORKSTATION-6,172.18.0.6,SSL Certificate Cannot Be Trusted,M‚dio,6.5,
+WORKSTATION-4,172.18.0.4,SSL Certificate Expiry,M‚dio,5.3,
+WORKSTATION-5,172.18.0.5,SSL Certificate Expiry,M‚dio,5.3,
+SERVER-6,172.20.0.6,SSL Certificate Expiry,M‚dio,5.3,
+SERVER-1,172.20.0.1,SSL Certificate Expiry,M‚dio,5.3,
+SERVER-1,172.20.0.1,SSL Self-Signed Certificate,M‚dio,6.4,
+SERVER-9,172.20.0.9,SSL Self-Signed Certificate,M‚dio,6.4,
+WORKSTATION-9,172.18.0.9,SSL Self-Signed Certificate,M‚dio,6.4,
+WORKSTATION-16,172.18.0.16,SSL Self-Signed Certificate,M‚dio,6.4,
+SERVER-3,172.20.0.3,SSL Self-Signed Certificate,M‚dio,6.4,
+WORKSTATION-8,172.18.0.8,SSL Self-Signed Certificate,M‚dio,6.4,
+WORKSTATION-5,172.18.0.5,SSL Self-Signed Certificate,M‚dio,6.4,
+SERVER-10,172.20.0.10,SSL Self-Signed Certificate,M‚dio,6.4,
+WORKSTATION-14,172.18.0.14,SSL Self-Signed Certificate,M‚dio,6.4,
+WORKSTATION-4,172.18.0.4,SSL Self-Signed Certificate,M‚dio,6.4,
+SERVER-6,172.20.0.6,SSL Self-Signed Certificate,M‚dio,6.4,
+WORKSTATION-6,172.18.0.6,SSL Self-Signed Certificate,M‚dio,6.4,
+SERVER-8,172.20.0.8,SSL Self-Signed Certificate,M‚dio,6.4,
+WORKSTATION-18,172.18.0.18,SSL Self-Signed Certificate,M‚dio,6.4,
+WORKSTATION-7,172.18.0.7,SSL Self-Signed Certificate,M‚dio,6.4,
+SERVER-2,172.20.0.2,SSL Self-Signed Certificate,M‚dio,6.4,
+SERVER-5,172.20.0.5,SSL Self-Signed Certificate,M‚dio,6.4,
+SERVER-4,172.20.0.4,SSL Self-Signed Certificate,M‚dio,6.4,
+SERVER-2,172.20.0.2,MS KB3009008: Vulnerability in SSL 3.0 Could Allow Information Disclosure (POODLE),M‚dio,4.3,10/14/2014
+SERVER-1,172.20.0.1,MS KB3009008: Vulnerability in SSL 3.0 Could Allow Information Disclosure (POODLE),M‚dio,4.3,10/14/2014
+SERVER-4,172.20.0.4,MS KB3009008: Vulnerability in SSL 3.0 Could Allow Information Disclosure (POODLE),M‚dio,4.3,10/14/2014
+WORKSTATION-5,172.18.0.5,MS KB3009008: Vulnerability in SSL 3.0 Could Allow Information Disclosure (POODLE),M‚dio,4.3,10/14/2014

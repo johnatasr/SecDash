@@ -43,9 +43,5 @@ node_modules/
 # Compass
 .sass-cache
 
-
-# User-uploaded media
-media/
-
 .idea
 .vscode
