@@ -13,6 +13,10 @@ e acuracidade.
 ## Como rodar o projeto ?
 
 * Clone o projeto
+* Selecione a branch DEV para ambiente de desenvolvimento. 
+```
+git pull DEV / git checkout DEV
+```
 * `cd djsrc/` e inicialize o ambiente virtual. 
 ```
 python -m venv secdash_venv

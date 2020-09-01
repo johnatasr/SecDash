@@ -130,7 +130,6 @@ else:
     DATABASES = {}
     DATABASES['default'] = dj_database_url.parse(env.str('DATABASE_URL'), conn_max_age=600)
 
-
     sentry_sdk.init(
         dsn=env.str('DNS_SENTRY'),
         integrations=[DjangoIntegration()],

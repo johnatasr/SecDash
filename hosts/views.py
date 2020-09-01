@@ -273,7 +273,7 @@ class HostsViewSet(viewsets.ModelViewSet):
             file_path = f"{settings.MEDIA_ROOT}/{obj_file.file.name}"
 
             if file.name[-3:] == 'csv':
-                exception_list = data_csv_tratament(file_path, obj_file)
+                exception_list = data_csv_tratament(obj_file.file.path, obj_file)
             else:
                 return Response("Formato de arquivo errado!", status=HTTP_406_NOT_ACCEPTABLE)
 

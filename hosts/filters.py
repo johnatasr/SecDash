@@ -24,13 +24,13 @@ def get_severity_by_media(media):
 
 def create_vulnerabilitie(row):
     try:
-        date_pub = row[5].split('/')
+        date_pub = row[5].split('-')
 
         payload = {
             'title': row[2],
             'severity': row[3],
             'cvss': row[4],
-            'publication_date': datetime(int(date_pub[2]), int(date_pub[0]), int(date_pub[1])),
+            'publication_date': datetime(int(date_pub[0]), int(date_pub[1]), int(date_pub[2])),
             'corrected': False
         }
 
@@ -72,7 +72,6 @@ def data_csv_tratament(file_path, file):
         readCSV = readCSV.replace(np.nan, '', regex=True)
 
         for index, row in readCSV.iterrows():
-            print(row)
             # TODO 0 - ASSET - HOSTNAME | 1 - ASSET - IP_ADDRESS | 2 - VULNERABILITY - TITLE | 3 - VULNERABILITY - SEVERITY | 4 - VULNERABILITY - CVSS | 5 - VULNERABILITY - PUBLICATION_DATE
             if len(row) != 6:
                 exception_list.append(
