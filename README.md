@@ -5,9 +5,8 @@
   
 
 </p>
-SecDash é uma plataforma de relatórios por gráficos e tabelas, onde o foco é detalhar informações de segurança sobre determinados
-relatórios obtidos por documentos. O foco da plataforma é trazer de forma detalhada todos insulmos existentes mantendo a precisão
-e acuracidade.
+SecDash é uma plataforma de relatórios por gráficos e tabelas, onde o foco é detalhar informações de segurança. 
+O foco da plataforma é trazer todos insulmos existentes mantendo a precisão e acuracidade.
 
 
 ## Como rodar o projeto ?
